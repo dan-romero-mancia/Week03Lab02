@@ -12,6 +12,15 @@
         <title>JSP Page</title>
     </head>
     <body>
-        <h1>Hello World!</h1>
+        <h1>Simple JSP Calculator</h1>
+        
+        <form action="Calculator" method="POST">
+            First: <input type="text" name="first" value="${first}"><br/>
+            Second: <input type="text" name="second" value="${second}"><br/>
+            <input type="submit" name="operation" value="+"> <input type="submit" name="operation" value="-"> 
+            <input type="submit" name="operation" value="*"> <input type="submit" name="operation" value="%">
+        </form>
+        <br/>
+        RESULT: ${calcPerformed}
     </body>
 </html>
